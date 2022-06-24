@@ -1,6 +1,6 @@
-FROM bitwalker/alpine-erlang:21.0
+FROM bitwalker/alpine-erlang:24.3.4
 
-ENV ELIXIR_VERSION 1.6.6
+ENV ELIXIR_VERSION 1.11.4
 
 RUN apk --no-cache upgrade
 RUN apk --no-cache add git make
@@ -13,7 +13,7 @@ RUN apk --no-cache add --virtual build-dependencies wget ca-certificates && \
     rm Precompiled.zip && \
     apk --no-cache del build-dependencies 
 
-RUN apk --no-cache add nodejs-npm
+RUN apk --no-cache add npm
 
 ENV PATH $PATH:/opt/elixir-${ELIXIR_VERSION}/bin
 
