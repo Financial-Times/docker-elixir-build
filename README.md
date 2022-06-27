@@ -2,12 +2,16 @@
 
 This builds a Docker image that can be used as a base to build Elixir (and Erlang) projects.
 
+## Important
+
+Make sure not to build this image on your MacBook with a M1 processor and push it to Nexus. Jenkins WILL NOT work with it. M1 images of this builder will only work when building docker containers locally. In order to push an image for Nexus, upload the file to the Jenkins server and build and push it from there. Only then will the image be with the correct architecture. (This statement will no longer be valid once Docker allows compatibility between the M1 processors and the rest of the architectures)
+
 ## Contents
 
-As of `elixir-build:2.2.0`:
+As of `elixir-build:2.3.0`:
 
-* Erlang 21.0
-* Elixir 1.6.6
+* Erlang 24.3.3
+* Elixir 1.11.4
 * Node 8.9.3 (npm 5.5.1)
 * `make`, `git`
 * `openssl`
