@@ -8,7 +8,7 @@ Make sure not to build this image on your MacBook with a M1 processor and push i
 
 ## Contents
 
-As of `elixir-build:2.3.0`:
+As of `elixir-build:3.0.4`:
 
 * Erlang 24.3.3
 * Elixir 1.11.4
