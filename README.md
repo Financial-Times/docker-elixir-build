@@ -8,9 +8,9 @@ Make sure not to build this image on your MacBook with a M1 processor and push i
 
 ## Contents
 
-As of `elixir-build:3.0.4`:
+As of `elixir-build:3.0.5`:
 
-* Erlang 24.3.3
+* Erlang 24.3.4
 * Elixir 1.11.4
 * Node 8.9.3 (npm 5.5.1)
 * `make`, `git`

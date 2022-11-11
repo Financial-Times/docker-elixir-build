@@ -1,4 +1,4 @@
-FROM bitwalker/alpine-erlang:24.3.3
+FROM bitwalker/alpine-erlang:24.3.4
 
 ENV ELIXIR_VERSION 1.11.4
 
